@@ -1,0 +1,14 @@
+{
+  "name": "Alexander-Maina",
+  "version": "1.0.0",
+  "description": "My portfolio using Tailwind",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexander",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}
