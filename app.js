@@ -1,4 +1,6 @@
 const menu = document.querySelector("#menu");
+const body = document.querySelector("body");
+const moon = document.querySelector("#moon");
 const hamburger = document.querySelector("#hamburger");
 const hLinks = document.querySelectorAll('#hLink');
 
@@ -19,4 +21,7 @@ hLinks.forEach(link => {
             hamburger.innerHTML = `<i class="fa fa-times text-2xl text-white cursor-pointer "></i>`;
         }
     })
+})
+moon.addEventListener("click", () => {
+    body.classList.toggle("dark")
 })
