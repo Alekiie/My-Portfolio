@@ -943,8 +943,56 @@ video {
   background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
+.bg-\[\[\#A1A1AA\]\] {
+  background-color: [#A1A1AA];
+}
+
+.bg-\[url\] {
+  background-color: url;
+}
+
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\)\] {
+  background-image: url();
+}
+
+.bg-\[url\(\"\"\)\] {
+  background-image: url("");
+}
+
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
+
+.bg-\[url\(\'\.\/\'\)\] {
+  background-image: url('./');
+}
+
+.bg-\[url\(\'\.\/images\'\)\] {
+  background-image: url('./images');
+}
+
+.bg-\[url\(\'\.\/images\/\'\)\] {
+  background-image: url('./images/');
+}
+
+.bg-\[url\(\'\.\/images\/web\'\)\] {
+  background-image: url('./images/web');
+}
+
+.bg-\[url\(\'\.\/images\/web_\'\)\] {
+  background-image: url('./images/web_');
+}
+
+.bg-\[url\(\'\.\/images\/web_scraping\'\)\] {
+  background-image: url('./images/web_scraping');
+}
+
+.bg-\[url\(\'\.\/images\/web_scraping\.png\'\)\] {
+  background-image: url('./images/web_scraping.png');
 }
 
 .from-indigo-500 {
@@ -957,6 +1005,22 @@ video {
   --tw-gradient-from: #4f46e5;
   --tw-gradient-to: rgb(79 70 229 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .object-cover {
