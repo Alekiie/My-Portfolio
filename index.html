@@ -20,65 +20,66 @@
     <!--into section-->
     <div id="home"
         class="h-3/4 md:h-screen w-full bg-gradient-to-t from-indigo-100  dark:from-slate-800 dark:to-slate-900 relative overflow-hidden">
-    </div>
-    <nav class="fixed w-full top-0 bg-white z-10 h-auto dark:bg-slate-900">
-        <div class="container mx-auto py-5 flex items-center justify-between">
-            <div class="flex items-center">
-                <span class="font-bold ml-5 text-indigo-900 text-2xl dark:text-white">Alexander</span>
+    
+        <nav class="fixed w-full top-0 bg-white z-10 h-auto dark:bg-slate-900">
+            <div class="container mx-auto py-5 flex items-center justify-between">
+                <div class="flex items-center">
+                    <span class="font-bold ml-5 text-indigo-900 text-2xl dark:text-white">Alexander</span>
+                </div>
+
+                <ul class="hidden md:flex space-x-10 text-gray-700 font-bold text-sm uppercase dark:text-gray-100" xt>
+                    <li class="hover:text-gray-500"><a href="#home">Home</a></li>
+                    <li class="hover:text-gray-500"><a href="#about">About Me</a></li>
+                    <li class="hover:text-gray-500"><a href="#projects">Projects</a></li>
+                    <li class="hover:text-gray-500"><a href="#contact">Contact Me</a></li>
+                </ul>
+                <i class="fas fa-moon h-12 w-8 cursor-pointer text-yellow-600 flex items-center justify-center p-4"
+                    id="moon"></i>
+
+                <div id="hamburger" class="z-20 mr-8">
+                    <img src="./images/menu.png" alt="" class="cursor-pointer md:hidden" />
+                </div>
+
+                <ul id="menu"
+                    class="hidden block bg-indigo-900 text-white absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-center">
+                    <li id="hLink"><a href="#home">Home</a></li>
+                    <li id="hLink"><a href="#about">About Me</a></li>
+                    <li id="hLink"><a href="#projects">Projects</a></li>
+                    <li id="hLink"><a href="#contact">Contact Me</a></li>
+                </ul>
             </div>
+        </nav>
+        <!--Image on the body-->
 
-            <ul class="hidden md:flex space-x-10 text-gray-700 font-bold text-sm uppercase dark:text-gray-100" xt>
-                <li class="hover:text-gray-500"><a href="#home">Home</a></li>
-                <li class="hover:text-gray-500"><a href="#about">About Me</a></li>
-                <li class="hover:text-gray-500"><a href="#projects">Projects</a></li>
-                <li class="hover:text-gray-500"><a href="#contact">Contact Me</a></li>
-            </ul>
-            <i class="fas fa-moon h-12 w-8 cursor-pointer text-yellow-600 flex items-center justify-center p-4"
-                id="moon"></i>
 
-            <div id="hamburger" class="z-20 mr-8">
-                <img src="./images/menu.png" alt="" class="cursor-pointer md:hidden" />
-            </div>
 
-            <ul id="menu"
-                class="hidden block bg-indigo-900 text-white absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-center">
-                <li id="hLink"><a href="#home">Home</a></li>
-                <li id="hLink"><a href="#about">About Me</a></li>
-                <li id="hLink"><a href="#projects">Projects</a></li>
-                <li id="hLink"><a href="#contact">Contact Me</a></li>
-            </ul>
+        <img src="./images/AlexanderFinal.png"
+            class="absolute h-[150px] w-[150px] top-[120px] right-1/3 md:absolute md:h-[300px] md:w-[300px] md:right-24 md:top-1/4 border border-red-300 rounded-full bg-slate-500"
+            alt="" />
+
+
+        <div
+            class="absolute right-0 left-0 text-center md:left-12 md:right-0 md:text-left top-[280px] text-xl sm:text-4xl md:text-6xl font-bold">
+            <span class="text-gray-500">Frontend Dev</span>
+            <p id="text" class="text-red-500"></p>
         </div>
-    </nav>
-    <!--Image on the body-->
+
+        <!-- links -->
+        <div
+            class="relative bottom-12  left-0 right-0 text-center text-2xl md:absolute  md:flex md:left-16 md:bottom-[120px] md:text-3xl ">
+            <i class="fab fa-github w-4 cursor-pointer text-black mx-2 md:mx-4"></i>
+            <i class="fab fa-linkedin w-4 cursor-pointer text-black mx-2 md:mx-4"></i>
 
 
-
-    <img src="./images/AlexanderFinal.png"
-        class="absolute h-[150px] w-[150px] top-[120px] right-1/3 md:absolute md:h-[300px] md:w-[300px] md:right-24 md:top-1/4 border border-red-300 rounded-full bg-slate-500"
-        alt="" />
-
-  
-    <div
-        class="absolute right-0 left-0 text-center md:left-12 md:right-0 md:text-left top-[280px] text-xl sm:text-4xl md:text-6xl font-bold">
-        <span class="text-gray-500">Frontend Dev</span>
-        <p id="text" class="text-red-500"></p>
-    </div>
-
-    <!-- links -->
-    <div class="relative bottom-12  left-0 right-0 text-center text-2xl md:absolute  md:flex md:left-16 md:bottom-[120px] md:text-3xl ">
-        <i class="fab fa-github w-4 cursor-pointer text-black mx-2 md:mx-4"></i>
-        <i class="fab fa-linkedin w-4 cursor-pointer text-black mx-2 md:mx-4"></i>
-
-
-        <i class="fab fa-twitter w-4 cursor-pointer text-blue-900 mx-2 md:mx-4"></i>
-        <i class="fab fa-instagram w-4 cursor-pointer text-red-600 mx-2 md:mx-4"></i>
-    </div>
+            <i class="fab fa-twitter w-4 cursor-pointer text-blue-900 mx-2 md:mx-4"></i>
+            <i class="fab fa-instagram w-4 cursor-pointer text-red-600 mx-2 md:mx-4"></i>
+        </div>
 
     </div>
 
     <!--About me section-->
-    <div id="about" class="  px-10 dark:bg-slate-900">
-        <div class="container mx-auto py-14 flex flex-col-reverse lg:flex-row items-center gap-20">
+    <div id="about" class="px-10 dark:bg-slate-900">
+        <div class=" mx-auto py-14 flex flex-col-reverse lg:flex-row items-center gap-20">
             <!--Left-->
             <div class="relative fixed">
                 <img src="./images/dots.webp" class="h-1/4 absolute left-0 top-0 -z-10" alt="" />
