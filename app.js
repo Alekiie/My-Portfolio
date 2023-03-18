@@ -25,4 +25,5 @@ hLinks.forEach((link) => {
 moon.addEventListener("click", () => {
   body.classList.toggle("dark");
   hamburger.classList.toggle("text-white");
+  moon.classList.toggle("text-white")
 });
