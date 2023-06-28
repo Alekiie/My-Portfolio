@@ -27,3 +27,24 @@ moon.addEventListener("click", () => {
   hamburger.classList.toggle("text-white");
   moon.classList.toggle("text-white")
 });
+////emailing
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Messaging';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_jcudk2w';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Message';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Message';
+      alert(JSON.stringify(err));
+    });
+});

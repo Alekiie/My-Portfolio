@@ -353,8 +353,8 @@
 
                 </div>
             </div>
-            <form method="post" class="mt-4 p-8 flex flex-col items-center gap-5">
-                <input type="text" name="name"
+            <form method="post" id="form" class="mt-4 p-8 flex flex-col items-center gap-5">
+                <input type="text" name="from_name"
                     class="w-full md:w-1/2 ring-1 p-2 ring-indigo-400 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
                     placeholder="Name" />
                 <input type="email" name="email"
@@ -363,8 +363,8 @@
                 <textarea name="message" name="message" id="" cols="30" rows="5"
                     class="w-full md:w-1/2 ring-1 p-2 ring-indigo-400 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
                     placeholder="Message"></textarea>
-                <button class="bg-indigo-600 w-1/2 rounded-md text-white font-medium px-3 py-2 cursor-pointer"
-                    disabled>Message</button>
+                <button id="button" class="bg-indigo-600 w-1/2 rounded-md text-white font-medium px-3 py-2 cursor-pointer"
+                    >Message</button>
             </form>
         </div>
     </div>
@@ -403,6 +403,12 @@
 
     <script src="./app.js"></script>
     <script src="./autotyping.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('Uf5y_nOucg2I89tyY')
+  </script>
 </body>
 
 </html>
